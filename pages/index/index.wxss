@@ -1,0 +1,36 @@
+page{
+	background-color: #fff;
+}
+.home_btn_box{
+  padding: 0 16px 20px 16px;
+}
+.index_item{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+.home_btn_item{
+	width: 48%;
+	padding: 14px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+}
+
+.home_btn_img{
+	width: 86px;
+	margin: 0 auto;
+}
+.home_btn_img image{
+	width: 86px;
+}
+.home_btn_bt{
+	font-size: 16px;
+	text-align: center;
+	margin-bottom: 2px;
+}
+.xinlibtn{
+	padding: 0 16px 16px;
+}
+.xinlibtn image{
+	width: 100%;
+}

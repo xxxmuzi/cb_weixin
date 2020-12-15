@@ -1,0 +1,174 @@
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>姓名</view>
+		<input name="cname" value='{{form.cname}}' maxlength="4" placeholder="请输入姓名"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>身份证号</view>
+		<input name="cidcard" value="{{form.cidcard}}" maxlength="18" placeholder="请输入身份证号"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>选择性别</view>
+		<switch class="switch-sex" value="{{form.csix}}" checked="{{isnan}}" bindchange="cageChange"></switch>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>年龄</view>
+		<input type="number" name="cage" value="{{form.cage}}" placeholder="请输入年龄"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>手机号码</view>
+		<input type="number" name="ctel" value="{{form.ctel}}" disabled maxlength="11" placeholder="请输入手机号码"></input>
+		<view class="cu-capsule radius">
+			<view class="cu-tag bg-blue">
+				+86
+			</view>
+			<view class="cu-tag line-blue">
+				中国大陆
+			</view>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">紧急联系人</view>
+		<input name="cjjName" value="{{form.cjjName}}" placeholder="请输入紧急联系人"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">联系人电话</view>
+		<input type="number" name="cjjTel" value="{{form.cjjTel}}" placeholder="请输入联系人电话号"></input>
+		<view class="cu-capsule radius">
+			<view class="cu-tag bg-blue">
+				+86
+			</view>
+			<view class="cu-tag line-blue">
+				中国大陆
+			</view>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>所属单位</view>
+		<input name="cmechanism" value="{{form.cmechanism}}" placeholder="请输入所属单位"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>户籍</view>
+		<picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+			<view class="picker">
+				{{region[0]}}，{{region[1]}}，{{region[2]}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>家庭地址</view>
+		<input name="cadd" value="{{form.cadd}}" placeholder="请输入家庭地址"></input>
+		<text class="cuIcon-locationfill text-orange"></text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">所属园办</view>
+		<picker name="cpid" bindchange="PickerChangeyb" value="{{ybindex}}" range="{{ybPicker}}">
+			<view class="picker">
+				{{ybindex?ybPicker[ybindex]:'选择园办'}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">隔离类型</view>
+		<picker name="cisolationMode" bindchange="PickerChangelx" value="{{lxindex}}" range="{{lxPicker}}">
+			<view class="picker">
+				{{lxindex?lxPicker[lxindex]:'选择类型'}}
+			</view>
+		</picker>
+	</view>
+	<view class="cu-form-group align-start">
+		<view class="title">隔离原因</view>
+		<textarea name="creasonsForIsolation" value="{{form.creasonsForIsolation}}" placeholder="请输入隔离原因"></textarea>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">隔离地址</view>
+		<input name="caddq" value="{{form.caddq}}" placeholder="请输入隔离地址"></input>
+		<text class="cuIcon-locationfill text-orange"></text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">隔离日期</view>
+		<picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1"
+		 range="{{dateTimeArray1}}">
+			<view class="picker">
+				{{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}}
+				{{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}:{{dateTimeArray1[5][dateTime1[5]]}}
+			</view>
+		</picker>
+	</view>
+
+
+
+	<view class="cu-form-group margin-top">
+		<view>既往史</view>
+		<checkbox-group name="cgeneticHistory" class="jws_box" bindchange='checkChange'>
+			<view class="cu-form-group" wx:for='{{items}}' wx:key='name'>
+				<view class="title">{{item.value}}</view>
+				<checkbox value='{{item.value}}' class="round blue"></checkbox>
+			</view>
+		</checkbox-group>
+	</view>
+
+	<view class="cu-form-group margin-top">
+		<view class="title">是否去过疫区</view>
+		<switch name="cepidemic" class="red sm" bindchange="switch1Change"></switch>
+	</view>
+	<view wx:if="{{ shows == true }}">
+		<view class="cu-form-group">
+			<view class="title">出行地</view>
+			<input name="cecity" value="{{form.cecity}}" placeholder="请输入出行地"></input>
+			<text class="cuIcon-locationfill text-orange"></text>
+		</view>
+
+		<!-- 返回时间 -->
+		<view class="cu-form-group">
+			<view class="title">返回时间</view>
+			<picker mode="multiSelector" value="{{dateTime2}}" bindchange="changeDateTime2" bindcolumnchange="changeDateTimeColumn2"
+			 range="{{dateTimeArray2}}">
+				<view class="picker">
+					{{dateTimeArray2[0][dateTime2[0]]}}-{{dateTimeArray2[1][dateTime2[1]]}}-{{dateTimeArray2[2][dateTime2[2]]}}
+					{{dateTimeArray2[3][dateTime2[3]]}}:{{dateTimeArray2[4][dateTime2[4]]}}:{{dateTimeArray2[5][dateTime2[5]]}}
+				</view>
+			</picker>
+		</view>
+
+		<view class="cu-form-group">
+			<view class="title">返回方式</view>
+			<input name="cmethod" value="{{form.cmethod}}" placeholder="请输入返回方式"></input>
+		</view>
+	</view>
+	
+
+	<view class="cu-form-group margin-top">
+		<view class="title">是否接触病患</view>
+		<switch name="ccontact" class="red sm" bindchange="switch2Change"></switch>
+	</view>
+	<view wx:if="{{ shows1 == true }}">
+		<view class="cu-form-group">
+			<view class="title">接触地点</view>
+			<input name="ccCity" value="{{form.ccCity}}" placeholder="请输入接触地点"></input>
+			<text class="cuIcon-locationfill text-orange"></text>
+		</view>
+
+		<!-- 接触时间 -->
+		<view class="cu-form-group">
+			<view class="title">接触时间</view>
+			<picker mode="multiSelector" value="{{dateTime3}}" bindchange="changeDateTime3" bindcolumnchange="changeDateTimeColumn3"
+			 range="{{dateTimeArray3}}">
+				<view class="picker">
+					{{dateTimeArray3[0][dateTime3[0]]}}-{{dateTimeArray3[1][dateTime3[1]]}}-{{dateTimeArray3[2][dateTime3[2]]}}
+					{{dateTimeArray3[3][dateTime3[3]]}}:{{dateTimeArray3[4][dateTime3[4]]}}:{{dateTimeArray3[5][dateTime3[5]]}}
+				</view>
+			</picker>
+		</view>
+
+		<view class="cu-form-group">
+			<view class="title">备注</view>
+			<input name="cremarks" value="{{form.cremarks}}" placeholder="请填写接触病患备注"></input>
+		</view>
+	</view>
+	<view class="padding-xl">
+		<button form-type="submit" class="cu-btn block bg-blue margin-tb-sm lg">
+			<!-- <text class="cuIcon-loading2 iconfont-spin"></text> -->
+			提交信息</button>
+	</view>
+</form>

@@ -1,0 +1,93 @@
+/* pages/tongji/tongji.wxss */
+page{
+	background-color: #fff;
+}
+.tongji_bt{
+	font-size: 36rpx;
+	font-weight: bold;
+	color: #333;
+}
+.tongji_time{
+	font-size: 26rpx;
+	line-height: 60rpx;
+}
+.text_t{
+	font-size: 26rpx;
+	padding-bottom: 10rpx;
+}
+.text_m{
+	font-size: 36rpx;
+	font-weight: bold;
+	padding-bottom: 10rpx;
+}
+.text_b{
+	font-size: 30rpx;
+	padding-bottom: 10rpx;
+}
+.tongji_midbox{
+	background-color: var(--ghostWhite);
+	padding: 40rpx;
+}
+.tongji_midcard{
+	padding: 30rpx;
+	background-color: #fff;
+}
+.bt{
+	font-weight: bold;
+}
+.tongji_btbox{
+	padding: 0 30rpx 30rpx 30rpx;
+}
+.tongji_listitem{
+	padding: 20rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.tongji_listitembt{
+	background-color: var(--ghostWhite);
+}
+.con_item{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 16rpx;
+}
+.flex1{
+	flex: 1;
+	text-align: right !important;
+}
+.cu-tagtitle{
+	width: 30%;
+}
+.cu-capsule+.cu-capsule {
+	margin-left: 0rpx;
+}
+.con_box{
+	padding: 16rpx 20rpx;
+}
+.ck_icon{
+	padding-left: 10rpx;
+	color: rgba(0, 0, 0, 0.3);
+}
+.totalnumbox{
+	display: flex;
+	align-items: center;
+}
+.totalnum{
+	display: inline-block;
+	text-align: center;
+	width: 60rpx;
+	border: 1px solid blue;
+	padding: 0 4rpx;
+	background-color: #f7f7f7;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.numboot{
+	margin-top: 20rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.addbtn{
+	height: 50rpx;
+	line-height: 50rpx;
+}

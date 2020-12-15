@@ -1,0 +1,18 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="xuzhi_box box_shadow">
+  <view class="xuzhi_top">叮咚！您有一份心理问卷请查收~</view>
+	<view class="xuzhi_text">
+	 近期的疫情可能给我们带来了一些影响，焦虑、恐慌、困惑、烦躁……大家的身心出现了不同程度的不适。疫情期间，身心健康需要悉心呵护，为了更有针对性地在生态区内开展心理支持服务，我们邀请您扫描二维码填写问卷。
+	</view>
+	<view class="dltxt">
+		<text class="dlcon">
+					如果您想一吐为快 \n
+					来拨打生态区 \n
+					24小时心理援助热线吧！ \n
+					热线号码：029-83216469 \n
+		</text>
+	</view>
+	<image src="../../images/shouceimg15.jpg" mode="widthFix" class="xinliimg"></image>
+</view>

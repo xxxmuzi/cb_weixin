@@ -1,0 +1,68 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="flex solid-bottom padding justify-between">
+	<view class="tongji_bt">统计信息汇总</view>
+	<view class="tongji_time">更新时间：<text>{{todaytime}}</text></view>
+</view>
+<view class="grid col-5 margin-bottom text-center">
+	<view>
+		<view class="text_t">今日<text class="text-red">+{{todayrdiagnosis}}</text></view>
+		<view class="text-red text_m">{{rdiagnosis}}人</view>
+		<view class="text_b">确诊</view>
+	</view>
+	<view>
+		<view class="text_t">今日<text class="text-orange">+{{todayrsuspected}}</text></view>
+		<view class="text-orange text_m">{{rsuspected}}人</view>
+		<view class="text_b">疑似</view>
+	</view>
+	<view>
+		<view class="text_t">今日<text class="text-green">+{{todayrtreatment}}</text></view>
+		<view class="text-green text_m">{{rtreatment}}人</view>
+		<view class="text_b">送医</view>
+	</view>
+	<view>
+		<view class="text_t">今日<text class="text-brown">+{{todayrdeath}}</text></view>
+		<view class="text-brown text_m">{{rdeath}}人</view>
+		<view class="text_b">死亡</view>
+	</view>
+	<view>
+		<view class="text_t">今日<text class="text-olive">+{{todayrcure}}</text></view>
+		<view class="text-olive text_m">{{rcure}}人</view>
+		<view class="text_b">治愈</view>
+	</view>
+</view>
+<view class="tongji_midbox">
+	<view class="grid col-2 tongji_midcard box_shadow">
+		<view class="margin-bottom">排查：<text class="text-red">{{rhousehold}}</text> 户</view>
+		<view class="margin-bottom">共计：<text class="text-mauve">{{rpeople}}</text> 人</view>
+		<view>密切接触：<text class="text-orange">{{rcloseContact}}</text> 人</view>
+		<view>解除隔离：<text class="text-green">{{rremoveIsolation}}</text> 人</view>
+	</view>
+</view>
+<view class="flex solid-bottom padding justify-between">
+	<view class="tongji_bt">国办信息统计</view>
+	<view class="tongji_time">更新时间：<text>{{todaytimef}}</text></view>
+</view>
+<view class="tongji_btbox">
+	<view class="tongji_listitembt">
+		<view class="tongji_listitem">
+			<view>近10日</view>
+			<view class="grid col-3 tongji_list_right">
+				<view class="text-red">确诊</view>
+				<view class="text-orange">死亡</view>
+				<view class="text-green">治愈</view>
+			</view>
+		</view>
+	</view>
+	<view class="tongji_listitemcon" wx:for="{{tenlist}}" wx:key="index">
+		<view class="tongji_listitem">
+			<view>{{item.rdate}}</view>
+			<view class="grid col-3 tongji_list_right">
+				<view>{{item.rdiagnosis}}</view>
+				<view>{{item.rdeath}}</view>
+				<view>{{item.rcure}}</view>
+			</view>
+		</view>
+	</view>
+</view>

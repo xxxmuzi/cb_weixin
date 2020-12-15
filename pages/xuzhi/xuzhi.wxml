@@ -1,0 +1,31 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="xuzhi_box box_shadow">
+  <view class="xuzhi_top">隔离人员须知</view>
+	<view class="xuzhi_text">
+	  为做好疫情防控工作，有效遏制疫情蔓延和扩散传播，降低感染风险，根据《中华人民共和国传染病防治法》和全市疫情防控工作部署，现对您居家隔离观察14天。在此期间对您的生活造成不便请您理解，同时，在隔离期间请您注意以下事项：
+	</view>
+	<view class="xuzhi_text">
+	  一、请关注“浐灞生态区”微信公众号，登录“人员隔离信息化管控平台”（以下简称“平台”），如实填报个人信息。
+	</view>
+	<view class="xuzhi_text">
+	  二、按照平台使用说明登录平台，按时、如实填报位置（早9点到晚9点，每三小时填报一次位置信息）、体温（每天早9点，晚8点填报体温信息）等信息。
+	</view>
+	<view class="xuzhi_text">
+	  三、如身体出现异常情况和急需生活用品时，请拨打您所在的园办电话：
+	</view>
+	<view class="text-cut padding bg-grey radius">金融园办: 83562820</view>
+	<view class="text-cut padding bg-grey radius">总部园办: 82546082</view>
+	<view class="text-cut padding bg-grey radius">世园园办: 83595796</view>
+	<view class="text-cut padding bg-grey radius">商贸园办: 83595718</view>
+	<view class="text-cut padding bg-grey radius">湿地园办: 86113228</view>
+	<view class="text-cut padding bg-grey radius">雁鸣湖园办（白班）: 89128903</view>
+	<view class="text-cut padding bg-grey radius">雁鸣湖园办（夜班）: 89128923</view>
+	<view class="xuzhi_text margin-top">
+	  四、请大家保持平和心态，在家留观，不要外出，勤洗手，多通风，生活垃圾放置门外，我们将组织专人统一收集清运。
+	</view>
+	<view class="xuzhi_text">
+	  五、在隔离期间，请大家主动做好配合工作，如因个人行为导致疫情进一步扩散，将承担相应法律责任。
+	</view>
+</view>

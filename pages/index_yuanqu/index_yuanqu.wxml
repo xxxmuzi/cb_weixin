@@ -1,0 +1,45 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="home_btn_box">
+	<view class="index_item margin-top">
+		<navigator class="home_btn_item box_shadow" url="../../pages/yuanquform/yuanquform"> 
+			<view class="home_btn_img">
+				<image src="../../images/shequ_icon1.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">每日上报</view>
+			</view>
+		</navigator>
+		<navigator class="home_btn_item box_shadow" url="../../pages/baojing/baojing">
+			<view class="home_btn_img">
+				<image src="../../images/shequ_icon2.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">数据异常报警</view>
+			</view>
+		</navigator>
+	</view>
+	<view class="index_item">
+		<navigator class="home_btn_item box_shadow" url="">
+			<view class="home_btn_img">
+				<image src="../../images/shequ_icon3.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">解除隔离人员</view>
+			</view>
+		</navigator>
+		<navigator class="home_btn_item box_shadow" url="../../pages/xuzhi_shiyong/xuzhi_shiyong">
+			<view class="home_btn_img">
+				<image src="../../images/shequ_icon4.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">平台使用须知</view>
+			</view>
+		</navigator>
+	</view>
+</view>
+<view class="height80px"></view>
+<view class="bottom_box">
+	<text>浐灞生态区联防联控新型冠状病毒感染的肺炎疫情指挥部办公室</text>
+</view>

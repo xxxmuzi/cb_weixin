@@ -1,0 +1,32 @@
+<!-- <view>
+<map id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="14"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  bindregionchange="regionchange"
+  show-location
+  style="width: 100%; height: 300px;"
+>
+</map>
+</view> -->
+
+
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group margin-top">
+		<view class="title">经度</view>
+		<text name="plongitude" >{{longitude}}</text>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">纬度</view>
+		<text name="platitude" placeholder="">{{latitude}}</text>
+	</view>
+  <view class="cu-form-group">
+		<view class="title">位置</view>
+		<text name="paddData" placeholder="">{{formatted_addresses}}</text>
+	</view>
+	<view class="padding-xl">
+		<button form-type="submit" class="cu-btn block bg-blue margin-tb-sm lg">提交信息</button>
+	</view>
+</form>

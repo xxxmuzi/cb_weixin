@@ -1,0 +1,177 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"preloadBackgroundData": false,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.0.4",
+	"appid": "wxe658658256516d96",
+	"projectname": "zyx_demo",
+	"cloudfunctionTemplateRoot": "",
+	"watchOptions": {
+		"ignore": []
+	},
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"scripts": {},
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "首页",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "个人信息管理",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "隔离人员信息",
+					"pathName": "pages/geliform/geliform",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 3,
+					"name": "园区登录",
+					"pathName": "pages/login_yuanqu/login_yuanqu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "健康打卡",
+					"pathName": "pages/jiankang/jiankang",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人登录",
+					"pathName": "pages/login/login",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "园区上报管理",
+					"pathName": "pages/index_yuanqu/index_yuanqu",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "数据异常报警",
+					"pathName": "pages/baojing/baojing",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "园区每日上报",
+					"pathName": "pages/yuanquform/yuanquform",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "统计信息",
+					"pathName": "pages/tongji/tongji",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "统计登录",
+					"pathName": "pages/login_huizong/login_huizong",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "心理首页",
+					"pathName": "pages/xinli_index/xinli_index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "疫情心理援助热线",
+					"pathName": "pages/xinli1/xinli1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "疫情防控心理调控手册",
+					"pathName": "pages/xinli2/xinli2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "公众心理援助热线",
+					"pathName": "pages/xinli3/xinli3",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "个人详细信息",
+					"pathName": "pages/gelichakan/gelichakan",
+					"scene": null
+				}
+			]
+		}
+	}
+}

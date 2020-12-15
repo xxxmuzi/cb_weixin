@@ -1,0 +1,42 @@
+/* pages/geliform/geliform.wxss */
+.jws_box{
+	display: block;
+	width: 76%;
+}
+.jws_box label{
+	display: block;
+}
+.container-wrap{
+width: 100%;
+overflow: auto;
+box-sizing: border-box;
+}
+.item-li{
+width: 100%;
+overflow: hidden;
+background: #fff;
+margin-top: 22rpx;
+}
+.item-li .item-title{
+width: 100%;
+height: 100rpx;
+padding-left: 38rpx;
+box-sizing: border-box;
+}
+.item-li .item-content {
+padding: 35rpx 50rpx;
+box-sizing: border-box;
+border-top: 1rpx solid #f0f0f0;
+}
+.item-li .item-content text{
+color: #4e4e4e;
+font-size: 26rpx;
+}
+.item-li .item-title text{
+color: #000;
+line-height: 100rpx;
+font-size: 28rpx;
+}
+.add_form{
+	text-align: left;
+}

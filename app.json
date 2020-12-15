@@ -1,0 +1,45 @@
+{
+  "pages": [
+		"pages/home/home",
+		"pages/index/index",
+    "pages/login/login",
+
+    "pages/jiankang/jiankang",
+    "pages/xuzhi/xuzhi",
+    "pages/weizhi/weizhi",
+
+    "pages/gelichakan/gelichakan",
+    "pages/geliform/geliform",
+
+		"pages/login_yuanqu/login_yuanqu",
+		"pages/index_yuanqu/index_yuanqu",
+		"pages/yuanquform/yuanquform",
+		"pages/baojing/baojing",
+		"pages/xuzhi_shiyong/xuzhi_shiyong",
+
+		"pages/login_huizong/login_huizong",
+		"pages/tongji/tongji",
+
+    "pages/xinli_index/xinli_index",
+    "pages/xinli1/xinli1",
+    "pages/xinli2/xinli2",
+    "pages/xinli3/xinli3"
+
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+    }
+  },
+	"networkTimeout": {
+	    "request": 5000
+	},
+  "sitemapLocation": "sitemap.json",
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "浐灞生态区疫情速报平台",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light"
+  }
+}

@@ -1,0 +1,36 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="home_btn_box">
+  <navigator class="home_btn_item box_shadow" url="../../pages/xinli1/xinli1"> 
+    <view class="home_btn_img">
+      <image src="../../images/xlicon1.png" mode="widthFix"></image>
+    </view>
+    <view>
+			<view class="home_btn_bt">疫情心理援助热线</view>
+      <text class="home_btn_js">预防与减轻公众因疫情所致心理困顿，增强全区人民抗疫信心和勇气。</text>
+    </view>
+  </navigator>
+  <navigator class="home_btn_item box_shadow" url="../../pages/xinli2/xinli2">
+    <view class="home_btn_img">
+      <image src="../../images/xlicon2.png" mode="widthFix"></image>
+    </view>
+    <view class="home_btn_con">
+			<view class="home_btn_bt">疫情防控心理调适手册</view>
+      <text class="home_btn_js">我们该如何主动调整心态，积极有效应对呢？</text>
+    </view>
+  </navigator>
+  <navigator class="home_btn_item box_shadow" url="../../pages/xinli3/xinli3">
+    <view class="home_btn_img">
+      <image src="../../images/xlicon3.png" mode="widthFix"></image>
+    </view>
+    <view class="home_btn_con">
+			<view class="home_btn_bt">公众心理援助热线</view>
+      <text class="home_btn_js">为呵护身心健康，针对性地在生态区内开展心理支持服务。</text>
+    </view>
+  </navigator>
+</view>
+<view class="height80px"></view>
+<view class="bottom_box">
+	<text>浐灞生态区联防联控新型冠状病毒感染的肺炎疫情指挥部办公室</text>
+</view>

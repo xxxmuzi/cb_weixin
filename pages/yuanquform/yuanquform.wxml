@@ -1,0 +1,42 @@
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group margin-top">
+		<view class="title">排查总户数</view>
+		<input type="number" name="rhousehold" placeholder="请输入排查总户数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">排查总人数</view>
+		<input type="number" name="rpeople" placeholder="请输入排查总人数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">疑似总数</view>
+		<input type="number" name="rsuspected" placeholder="请输入疑似总数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">确诊总数</view>
+		<input type="number" name="rdiagnosis" placeholder="请输入确诊总数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">死亡人数</view>
+		<input type="number" name="rdeath" placeholder="请输入死亡人数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">治愈人数</view>
+		<input type="number" name="rcure" placeholder="请输入治愈人数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">送医治疗人数</view>
+		<input type="number" name="rtreatment" placeholder="请输入送医治疗人数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">密切接触者人数</view>
+		<input type="number" name="rcloseContact" placeholder="请输入密切接触者人数"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">解除隔离人数</view>
+		<input type="number" name="rremoveIsolation" placeholder="请输入解除隔离人数"></input>
+	</view>
+	<view class="padding-xl">
+	  <button class="cu-btn block bg-blue margin-tb-sm lg" form-type="submit">提交信息</button>
+	</view>
+
+</form>

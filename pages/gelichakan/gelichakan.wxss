@@ -1,0 +1,24 @@
+.page{
+	padding: 30rpx;
+	color: #666;
+	font-size: 30rpx;
+	}
+.chakanbt{
+	font-size: 38rpx;
+	font-weight: bold;
+	color: #2b2b2b;
+}
+.chakanitem{
+	display: flex;
+	justify-content: space-between;
+	margin: 30rpx 0;
+}
+.cu-form-group{
+	min-height: 80rpx;
+}
+.hideclass{
+	display: none;
+}
+.showclass{
+	display: block;
+}

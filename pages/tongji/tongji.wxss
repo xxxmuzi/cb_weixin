@@ -1,0 +1,53 @@
+/* pages/tongji/tongji.wxss */
+page{
+	background-color: #fff;
+}
+.tongji_bt{
+	font-size: 36rpx;
+	font-weight: bold;
+	color: #333;
+}
+.tongji_time{
+	font-size: 26rpx;
+	line-height: 60rpx;
+}
+.text_t{
+	font-size: 26rpx;
+	padding-bottom: 10rpx;
+}
+.text_m{
+	font-size: 36rpx;
+	font-weight: bold;
+	padding-bottom: 10rpx;
+}
+.text_b{
+	font-size: 30rpx;
+	padding-bottom: 10rpx;
+}
+.tongji_midbox{
+	background-color: var(--ghostWhite);
+	padding: 40rpx;
+}
+.tongji_midcard{
+	padding: 30rpx;
+	background-color: #fff;
+}
+.tongji_midcard text{
+	font-weight: bold;
+}
+.tongji_btbox{
+	padding: 0 30rpx 60rpx 30rpx;
+}
+.tongji_listitem{
+	padding: 20rpx;
+	display: flex;
+	justify-content: space-between;
+}
+.tongji_list_right{
+	width: 60%;
+	text-align: center;
+}
+.tongji_listitembt{
+	background-color: var(--ghostWhite);
+	font-weight: bold;
+}

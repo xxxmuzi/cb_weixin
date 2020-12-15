@@ -1,0 +1,11 @@
+/* pages/geliform/geliform.wxss */
+.jws_box{
+	display: block;
+	width: 76%;
+}
+.jws_box label{
+	display: block;
+}
+.title{
+	min-width: 180rpx;
+}

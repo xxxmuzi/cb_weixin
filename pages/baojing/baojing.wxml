@@ -1,0 +1,139 @@
+<view>
+	<image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="flex padding justify-between">
+	<view class="tongji_bt">{{pageTitle}}</view>
+	<view class="tongji_time">更新时间：<text>{{todaytime}}</text></view>
+</view>
+<view class="grid col-4 margin-bottom text-center">
+	<view>
+		<view class="text-red text_m">{{shangbaonum}}人</view>
+		<view class="text_b">应上报</view>
+	</view>
+	<view>
+		<view class="text-orange text_m">{{weizhinum}}人</view>
+		<view class="text_b">未上报位置</view>
+	</view>
+	<view>
+		<view class="text-green text_m">{{jiankangnum}}人</view>
+		<view class="text_b">未上报健康</view>
+	</view>
+	<view>
+		<view class="text-brown text_m">{{yichangnum}}人</view>
+		<view class="text_b">健康异常</view>
+	</view>
+</view>
+<view class="flex padding justify-between">
+	<view class="tongji_bt">详细信息</view>
+</view>
+
+<!-- 未上报位置 -->
+<view class="tongji_btbox">
+	<view class="bg-gradual-orange radius shadow-blur">
+		<view class="tongji_listitem">
+			<view class="bt">未上报位置人员信息</view>
+			<view class="bt">{{weizhinum}}人</view>
+		</view>
+	</view>
+	<view class='tongji_listitembt'>
+	  <view class='item solid-bottom' wx:for="{{weizhilist}}" wx:key="index">
+	    <view class='tongji_listitem' data-index='{{index+1}}' catchtap='panel'>
+					<view>{{item.cname}}</view>
+					<view>{{item.ctel}}<text class="ck_icon {{showIndex == index+1 ? 'cuIcon-unfold':'cuIcon-right'}}"></text></view>
+	    </view>
+	    <view class='con_box' wx:if="{{showIndex == index+1}}">
+				<view class="cu-capsule round con_item">
+					<view class="cu-tag bg-blue cu-tagtitle">身份证号：</view>
+					<view class="cu-tag line-blue flex1">{{item.cidcard}}</view>
+				</view>
+				<view class="cu-capsule round con_item">
+					<view class="cu-tag bg-red cu-tagtitle">年龄：</view>
+					<view class="cu-tag line-red flex1">3{{item.cage}}岁</view>
+				</view>
+			</view>
+	  </view>
+	</view>
+	<view class="numboot">
+		<view class="totalnumbox">每页显示<input type="number" class="totalnum" value="{{sizenum}}" bindinput='changeSizeWz'/>条</view>
+		<view class="totalnumbox">
+			当前第
+			<button class="addbtn" disabled="{{total <= 1 ? true : false}}" bindtap="subtotal">-</button>
+			<text>{{total}}页</text>
+			<button class="addbtn" disabled="{{weizhinum/sizenum <= total ? true : false}}" bindtap="addtotal">+</button>
+		</view>
+	</view>
+</view>
+
+<!-- 未上报健康 -->
+<view class="tongji_btbox">
+	<view class="bg-gradual-orange radius shadow-blur">
+		<view class="tongji_listitem">
+			<view class="bt">未上报健康人员信息</view>
+			<view class="bt">{{jiankangnum}}人</view>
+		</view>
+	</view>
+	<view class='tongji_listitembt'>
+	  <view class='item solid-bottom' wx:for="{{jiankanglist}}" wx:key="index">
+	    <view class='tongji_listitem' data-index='{{index+1}}' catchtap='paneljk'>
+					<view>{{item.cname}}</view>
+					<view>{{item.ctel}}<text class="ck_icon {{showIndexjk == index+1 ? 'cuIcon-unfold':'cuIcon-right'}}"></text></view>
+	    </view>
+	    <view class='con_box' wx:if="{{showIndexjk == index+1}}">
+				<view class="cu-capsule round con_item">
+					<view class="cu-tag bg-blue cu-tagtitle">身份证号：</view>
+					<view class="cu-tag line-blue flex1">{{item.cidcard}}</view>
+				</view>
+				<view class="cu-capsule round con_item">
+					<view class="cu-tag bg-red cu-tagtitle">年龄：</view>
+					<view class="cu-tag line-red flex1">3{{item.cage}}岁</view>
+				</view>
+			</view>
+	  </view>
+	</view>
+	<view class="numboot">
+		<view class="totalnumbox">每页显示<input type="number" class="totalnum" value="{{sizenumjk}}" bindinput='changeSizeJk'/>条</view>
+		<view class="totalnumbox">
+			当前第
+			<button class="addbtn" disabled="{{totaljk <= 1 ? true : false}}" bindtap="subtotaljk">-</button>
+			<text>{{totaljk}}页</text>
+			<button class="addbtn" disabled="{{jiankangnum/sizenumjk <= totaljk ? true : false}}" bindtap="addtotaljk">+</button>
+		</view>
+	</view>
+</view>
+
+<!-- 健康异常 -->
+<view class="tongji_btbox margin-bottom">
+	<view class="bg-gradual-orange radius shadow-blur">
+		<view class="tongji_listitem">
+			<view class="bt">健康状况异常人员信息</view>
+			<view class="bt">{{yichangnum}}人</view>
+		</view>
+	</view>
+	<view class='tongji_listitembt'>
+	  <view class='item solid-bottom' wx:for="{{yichanglist}}" wx:key="index">
+	    <view class='tongji_listitem' data-index='{{index+1}}' catchtap='panelyc'>
+					<view>{{item.cname}}</view>
+					<view>{{item.ctel}}<text class="ck_icon {{showIndexyc == index+1 ? 'cuIcon-unfold':'cuIcon-right'}}"></text></view>
+	    </view>
+	    <view class='con_box' wx:if="{{showIndexyc == index+1}}">
+				<view class="cu-capsule round con_item">
+					<view class="cu-tag bg-blue cu-tagtitle">身份证号：</view>
+					<view class="cu-tag line-blue flex1">{{item.cidcard}}</view>
+				</view>
+				<view class="cu-capsule round con_item">
+					<view class="cu-tag bg-red cu-tagtitle">年龄：</view>
+					<view class="cu-tag line-red flex1">3{{item.cage}}岁</view>
+				</view>
+			</view>
+	  </view>
+	</view>
+	<view class="numboot">
+		<view class="totalnumbox">每页显示<input type="number" class="totalnum" value="{{sizenumyc}}" bindinput='changeSizeYc'/>条</view>
+		<view class="totalnumbox">
+			当前第
+			<button class="addbtn" disabled="{{totalyc <= 1 ? true : false}}" bindtap="subtotalyc">-</button>
+			<text>{{totalyc}}页</text>
+			<button class="addbtn" disabled="{{yichangnum/sizenumyc <= totalyc ? true : false}}" bindtap="addtotalyc">+</button>
+		</view>
+	</view>
+</view>

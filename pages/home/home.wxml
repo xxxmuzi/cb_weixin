@@ -1,0 +1,36 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="home_btn_box">
+  <navigator class="home_btn_item box_shadow" url="../../pages/login/login"> 
+    <view class="home_btn_img">
+      <image src="../../images/img01.png" mode="widthFix"></image>
+    </view>
+    <view>
+			<view class="home_btn_bt">个人上报</view>
+      <text class="home_btn_js">针对关注人群提交的温度、位置、身体情况给出各种提醒信息，统计信息。</text>
+    </view>
+  </navigator>
+  <navigator class="home_btn_item box_shadow" url="../../pages/login_yuanqu/login_yuanqu">
+    <view class="home_btn_img">
+      <image src="../../images/img02.png" mode="widthFix"></image>
+    </view>
+    <view class="home_btn_con">
+			<view class="home_btn_bt">园区上报</view>
+      <text class="home_btn_js">针对社区街道办提交的结果信息，给出各种提醒信息，统计信息。</text>
+    </view>
+  </navigator>
+  <navigator class="home_btn_item box_shadow" url="../../pages/tongji/tongji">
+    <view class="home_btn_img">
+      <image src="../../images/img03.png" mode="widthFix"></image>
+    </view>
+    <view class="home_btn_con">
+			<view class="home_btn_bt">汇总统计</view>
+      <text class="home_btn_js">针对园区提交的结果信息，进行信息统计。</text>
+    </view>
+  </navigator>
+</view>
+<view class="height80px"></view>
+<view class="bottom_box">
+	<text>浐灞生态区联防联控新型冠状病毒感染的肺炎疫情指挥部办公室</text>
+</view>

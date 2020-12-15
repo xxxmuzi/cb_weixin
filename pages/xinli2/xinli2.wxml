@@ -1,0 +1,113 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="xuzhi_box box_shadow">
+  <view class="xuzhi_top">【干货】亲爱的浐灞人，这里有一份《疫情防控心理调适手册》，请查收！</view>
+	<view class="xuzhi_text">
+	  近日来，全国各地民众都在时刻关注疫情防控的进展，大量信息的涌入给大家带来了一定程度的焦虑与恐慌，甚至可能影响睡眠，降低免疫力。我们该如何主动调整心态，积极有效应对呢？今天小编从以下七个方面来向大家分享如何做好突发疫情时的心理调适。
+	</view>
+	<image src="../../images/shouceimg01.png" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<view class="dlbt">一线防疫及其他工作人员心理调适</view>
+		<text class="dlcon">
+			正确看待，积极应对。\n
+			周密计划，隔离排班。\n
+			充足睡眠，均衡饮食。\n
+			自我调适，放松身心。\n
+			接受挫折，悦纳自己。\n
+			亲友支持，汲取能量。\n
+			倾诉分享，同伴支持。\n
+			允许示弱，宣泄情绪。\n
+			心理问题，专业求助。\n
+			后方稳定，安心工作。
+		</text>
+	</view>
+	<image src="../../images/shouceimg02.png" mode="widthFix" class="xinliimg"></image>
+	<image src="../../images/shouceimg03.png" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<view class="dlbt">确诊患者及家属心理调适</view>
+		<text class="dlcon">
+			接纳当下，配合治疗。\n
+			网络联系，情意不变。\n
+			谨遵医嘱，早日康复。
+		</text>
+	</view>
+	<image src="../../images/shouceimg04.png" mode="widthFix" class="xinliimg"></image>
+	<image src="../../images/shouceimg05.png" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<view class="dlbt">疑似患者心理调试</view>
+		<text class="dlcon">
+			了解信息，接纳情绪。\n
+			规律生活，适当放松。\n
+			乐观生活，做好防护。\n
+			亲友沟通，寻求支持。
+		</text>
+	</view>
+	<image src="../../images/shouceimg06.png" mode="widthFix" class="xinliimg"></image>
+	<image src="../../images/shouceimg07.png" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<view class="dlbt">居家人员心理调适</view>
+		<text class="dlcon">
+			出门必须戴口罩，人多不去凑热闹；\n
+			加强防护少聚餐，拒绝野味素食好；\n
+			经常开窗勤洗手，加强锻炼要睡早；\n
+			各种场合不参与，侥幸心理不能要；\n
+			不信谣言不传谣，恐慌心里得抵消；\n
+			发热咳嗽不舒服，门诊电话咨询好；\n
+			防控疫情任务重，团结协作渡难关；\n
+			众人划桨开大船，乘风破浪定能赢！
+		</text>
+	</view>
+	<image src="../../images/shouceimg08.png" mode="widthFix" class="xinliimg"></image>
+	<image src="../../images/shouceimg09.png" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<view class="dlbt">返岗工作人员心理调适</view>
+		<text class="dlcon">
+			学习知识，做好防护。\n
+			遵守要求，积极磨合。\n
+			避免分心，注意集中。\n
+			觉察身心，及时求助。\n
+			定时锻炼，健康工作。
+		</text>
+	</view>
+	<image src="../../images/shouceimg10.png" mode="widthFix" class="xinliimg"></image>
+	<image src="../../images/shouceimg11.png" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<view class="dlbt">老年人心理调适</view>
+		<text class="dlcon">
+			客观认识，避免外出。\n
+			科学防疫，坚定信心。\n
+			健康生活，规律作息。\n
+			接纳情绪，沟通排解。\n
+			保持卫生，健康长寿。
+		</text>
+	</view>
+	<image src="../../images/shouceimg12.png" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<view class="dlbt">儿童心理调适</view>
+		<text class="dlcon">
+									合理安排，规律作息。\n
+									科学防疫，树立信心。\n
+									父母陪伴，亲子游戏。\n
+									适宜回答，各类问题。\n
+									健康成长，共渡难关。
+		</text>
+	</view>
+	<image src="../../images/shouceimg13.png" mode="widthFix" class="xinliimg"></image>
+	<view class="xuzhi_text">
+	  音频出自国家卫生健康委员会疾病预防控制局指导，人民卫生出版社出品的《应对新型冠状病毒肺炎疫情心理调试指南》。
+	</view>
+	<image src="../../images/shouceimg14.jpg" mode="widthFix" class="xinliimg"></image>
+	<view class="xuzhi_text">
+	  为了更好地为生态区公众开展心理健康支持服务，我们邀请关注心理状态的您填写问卷。
+	</view>
+	<image src="../../images/shouceimg15.jpg" mode="widthFix" class="xinliimg"></image>
+	<view class="dltxt">
+		<text class="dlcon">
+					如果您想一吐为快 \n
+					来拨打生态区 \n
+					24小时心理援助热线吧！ \n
+					热线号码：029-83216469
+		</text>
+	</view>
+</view>

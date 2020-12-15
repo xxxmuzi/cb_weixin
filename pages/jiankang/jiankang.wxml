@@ -1,0 +1,107 @@
+<form bindsubmit="formSubmit">
+	<view class="cu-form-group margin-top">
+		<view class="title"><text class="cuIcon-title text-red"></text>姓名</view>
+		<input name="cname" value="{{form.cname}}" disabled="{{isDisabled}}" placeholder="请输入姓名"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>身份证号</view>
+		<input name="cidcard" value="{{form.cidcard}}" disabled="{{isDisabled}}" placeholder="请输入身份证号"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">健康打卡上报人</view>
+		 <button class="cu-btn bg-green shadow" bindtap="showModal" data-target="Modal">添加家人</button>
+		
+	</view>
+	<view class="cu-form-group">
+		<view class="title"><text class="cuIcon-title text-red"></text>体温</view>
+		<input type="number"  name="htemperature" placeholder="请输入体温"></input>
+		<text>℃</text>
+	</view>
+	<view class="cu-form-group margin-top">
+		<view>持续干咳</view>
+		<radio-group name="hcough" class="jws_box" bindchange='checkChange1'>
+			<view class="cu-form-group" wx:for='{{items}}' wx:key='name'>
+				<view class="title">{{item.value}}</view>
+				<radio value='{{item.name}}' class="round blue" checked='{{item.checked}}'></radio>
+			</view>
+		</radio-group>
+	</view>
+	<view class="cu-form-group margin-top">
+		<view>持续乏力</view>
+		<radio-group name="hweak" class="jws_box" bindchange='checkChange2'>
+			<view class="cu-form-group" wx:for='{{items}}' wx:key='name'>
+				<view class="title">{{item.value}}</view>
+				<radio value='{{item.name}}' class="round blue" checked='{{item.checked}}'></radio>
+			</view>
+		</radio-group>
+	</view>
+	<view class="cu-form-group margin-top">
+		<view>持续呼吸乏力</view>
+		<radio-group name="hdyspnea" class="jws_box" bindchange='checkChange3'>
+			<view class="cu-form-group" wx:for='{{items}}' wx:key='name'>
+				<view class="title">{{item.value}}</view>
+				<radio value='{{item.name}}' class="round blue" checked='{{item.checked}}'></radio>
+			</view>
+		</radio-group>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">隔离天数</view>
+		<input disabled value="1"></input>
+	</view>
+	<view class="padding-xl">
+	  <button form-type="submit" class="cu-btn block bg-blue margin-tb-sm lg">提交信息</button>
+	</view>
+</form>
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar bg-gray justify-end">
+      <view class="content">添加家人</view>
+      <view class="action" bindtap="hideModal">
+        <text class="cuIcon-close text-red"></text>
+      </view>
+    </view>
+		<form bindsubmit="formSubmit1" class="add_form">
+			<view class="cu-form-group">
+				<view class="title">姓名</view>
+				<input name="jrname" placeholder="请输入姓名"></input>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">与本人关系</view>
+				<picker name="jrgx" bindchange="PickerChangeyb" value="{{ybindex}}" range="{{ybPicker}}">
+					<view class="picker">
+						{{ybindex?ybPicker[ybindex]:'选择家人'}}
+					</view>
+				</picker>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">身份证号</view>
+				<input name="jrsfz" maxlength="18" placeholder="请输入身份证号"></input>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">选择性别</view>
+				<switch class="switch-sex" checked="{{isnan}}" name="jrxb" bindchange="cageChange"></switch>
+			</view>
+			<view class="cu-form-group">
+				<view class="title">年龄</view>
+				<input type="number" name="jrnl" placeholder="请输入年龄"></input>
+			</view>
+			<view class="cu-form-group">
+				<view>既往史</view>
+				<checkbox-group name="jrjws" class="jws_box" bindchange='checkChange4'>
+					<view class="cu-form-group" wx:for='{{items3}}' wx:key='name'>
+						<view class="title">{{item.value}}</view>
+						<checkbox value='{{item.value}}' class="round blue"></checkbox>
+					</view>
+				</checkbox-group>
+			</view>
+			<view class="flex">
+				<view class="flex-sub padding-sm margin-xs">
+					<button class="cu-btn block bg-blue lg" bindtap="hideModal">取消添加</button>
+				</view>
+				<view class="flex-sub padding-sm margin-xs">
+					<button form-type="submit" class="cu-btn block bg-blue lg">确认添加</button>
+				</view>
+			</view>
+		</form>
+  </view>
+</view>

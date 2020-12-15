@@ -1,0 +1,24 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<view class="xuzhi_box box_shadow">
+  <view class="xuzhi_top">平台使用须知</view>
+	<view class="xuzhi_text">
+	  为做好生态区疫情防控隔离管理工作，提高工作效率，请您通过“人员隔离信息化管控平台”做好被隔离人员管理和服务工作并注意以下事项：
+	</view>
+	<view class="xuzhi_text">
+	  一、做好被隔离人员信息的保密工作。
+	</view>
+	<view class="xuzhi_text">
+	  二、指导被隔离人员使用“人员隔离信息化管控平台”完成信息填报工作。
+	</view>
+	<view class="xuzhi_text">
+	  三、各园办按时向平台填报今日疫情相关信息，平台进行汇总。
+	</view>
+	<view class="xuzhi_text margin-top">
+	  四、收到平台关于被隔离人员位置偏离、体温异常等报警信息时，请及时进行处置。
+	</view>
+	<view class="xuzhi_text">
+	  五、通过平台做好被隔离人员解除隔离的相关工作。
+	</view>
+</view>

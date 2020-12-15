@@ -1,0 +1,142 @@
+<view class="page">
+	<!-- <text class="text-red {{cname == '' ? 'hideclass' : 'showclass'}}">未填写</text> -->
+	<view class="chakanbt">基本信息</view>
+	<view class="cu-form-group margin-top">
+		<view>姓名</view>
+		<view>{{cname}}</view>
+	</view>
+	<view class="cu-form-group">
+		<view>身份证号</view>
+		<view>{{cidcard}}</view>
+	</view>
+	<view class="cu-form-group">
+		<view>性别</view>
+		<view>{{csix}}</view>
+	</view>
+	<view class="cu-form-group">
+		<view>年龄</view>
+		<view>{{cage}}</view>
+	</view>
+	<view class="cu-form-group">
+		<view>手机号码</view>
+		<view>{{ctel}}</view>
+	</view>
+	<view class="cu-form-group">
+		<view>紧急联系人</view>
+		<view>{{cjjName}}
+		<text class="text-red {{cjjName == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>联系人电话</view>
+		<view>{{cjjTel}}
+		<text class="text-red {{cjjTel == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>所属单位</view>
+		<view>{{cmechanism}}
+		<text class="text-red {{cmechanism == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>户籍</view>
+		<view>{{chouseholdRegister}}
+		<text class="text-red {{chouseholdRegister == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>家庭地址</view>
+		<view>{{cadd}}
+		<text class="text-red {{cadd == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>所属园办</view>
+		<view>{{ybPicker[cpid-1]}}
+		<text class="text-red {{cpid < 1 ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>隔离类型</view>
+		<view>{{cisolationMode}}
+		<text class="text-red {{cisolationMode == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>隔离原因</view>
+		<view>{{creasonsForIsolation}}
+		<text class="text-red {{creasonsForIsolation == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>隔离地址</view>
+		<view>{{caddq}}
+		<text class="text-red {{caddq == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>隔离日期</view>
+		<view>{{cquarantineTime}}
+		<text class="text-red {{cquarantineTime == null ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view>既往史</view>
+		<view>{{cgeneticHistory}}
+		<text class="text-red {{cgeneticHistory == '' ? 'showclass' : 'hideclass'}}">未填写</text>
+		</view>
+	</view>
+	<view>
+	<view class="cu-form-group margin-top">
+		<view>是否去过疫区</view>
+		<view>{{cepidemic <= 1 ? '否' : '是'}}</view>
+	</view>
+		<view class="cu-form-group">
+			<view>出行地</view>
+			<view>{{cecity == null ? '' : cecity}}
+			<text class="text-red {{cecity == null ? 'showclass' : 'hideclass'}}">未填写</text>
+			</view>
+		</view>
+		<view class="cu-form-group">
+			<view>返回时间</view>
+			<view>{{cetime == null ? '' : cetime}}
+			<text class="text-red {{cetime == null ? 'showclass' : 'hideclass'}}">未填写</text>
+			</view>
+		</view>
+		<view class="cu-form-group">
+			<view>返回方式</view>
+			<view>{{cmethod == null ? '' : cmethod}}
+			<text class="text-red {{cmethod == null ? 'showclass' : 'hideclass'}}">未填写</text>
+			</view>
+		</view>
+	</view>
+	<view>
+		<view class="cu-form-group margin-top">
+			<view>是否接触病患</view>
+			<view>{{ccontact <= 1 ? '否' : '是'}}</view>
+		</view>
+		<view class="cu-form-group">
+			<view>接触地点</view>
+			<view>{{ccCity == null ? '' : ccCity}}
+			<text class="text-red {{ccCity == null ? 'showclass' : 'hideclass'}}">未填写</text>
+			</view>
+		</view>
+		<view class="cu-form-group">
+			<view>接触时间</view>
+			<view>{{cctime == null ? '' : cctime}}
+			<text class="text-red {{cctime == null ? 'showclass' : 'hideclass'}}">未填写</text>
+			</view>
+		</view>
+		<view class="cu-form-group">
+			<view>接触方式备注</view>
+			<view>{{cremarks == null ? '' : cremarks}}
+			<text class="text-red {{cremarks == null ? 'showclass' : 'hideclass'}}">未填写</text>
+			</view>
+		</view>
+	</view>
+	<view class="padding-xl">
+		<button form-type="submit" bindtap="cageChange" class="cu-btn block bg-blue margin-tb-sm lg">
+			重新填报</button>
+	</view>
+</view>

@@ -1,0 +1,48 @@
+<view>
+  <image class="yq_topimg" src="../../images/top.png" mode="widthFix"></image>
+</view>
+<navigator class="xinlibtn" url="../../pages/xinli_index/xinli_index"> 
+		<image src="../../images/jnbanner.png" mode="widthFix"></image>
+</navigator>
+<view class="home_btn_box">
+	<view class="index_item">
+		<navigator class="home_btn_item box_shadow" url="../../pages/gelichakan/gelichakan"> 
+			<view class="home_btn_img">
+				<image src="../../images/icon01.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">隔离人员信息</view>
+			</view>
+		</navigator>
+		<navigator class="home_btn_item box_shadow" url="../weizhi/weizhi">
+			<view class="home_btn_img">
+				<image src="../../images/icon03.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">实时位置上报</view>
+			</view>
+		</navigator>
+	</view>
+	<view class="index_item">
+		<navigator  class="home_btn_item box_shadow" url="../jiankang/jiankang">
+			<view class="home_btn_img">
+				<image src="../../images/icon04.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">健康打卡</view>
+			</view>
+		</navigator>
+		<navigator class="home_btn_item box_shadow" url="../xuzhi/xuzhi">
+			<view class="home_btn_img">
+				<image src="../../images/icon02.png" mode="widthFix"></image>
+			</view>
+			<view class="home_btn_con">
+				<view class="home_btn_bt">隔离须知</view>
+			</view>
+		</navigator>
+	</view>
+</view>
+<view class="height80px"></view>
+<view class="bottom_box">
+	<text>浐灞生态区联防联控新型冠状病毒感染的肺炎疫情指挥部办公室</text>
+</view>
